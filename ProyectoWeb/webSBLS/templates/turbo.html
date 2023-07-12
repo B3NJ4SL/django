@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo</title>
+    <link rel="shortcut icon" href="{% static 'img/auto_logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'IND' %}">Inicio</a>
+            <a href="{% url 'GALE' %}">Galeria</a>
+            <a href="{% url 'CONTA' %}">Formulario de contacto</a>
+            <a href="{% url 'LOGIN' %}">Iniciar session</a>
+            <a href="{% url 'REGIST' %}">Registrarse</a>
+        </nav>
+        <section class="textos-header">            
+            <h1>Instalacion de turbocompresor</h1>
+            <h2>Las mejores modificaciones para su vehiculo</h2>
+        </section>
+        <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.41,0.52 C163.37,237.34 354.68,-94.22 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000000;"></path></svg></div>
+        
+    </header>
+    <main>
+        <section class="contenedor principal">
+            <h2 class="titulo">Taller mecanico rayo makween</h2>
+            <h3 class="subtitulo">Trabajos de Instalacion de turbocompresor</h3>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a title="1" href="galeria.html"><img src="{% static 'img/instalacion turbo.jpg' %}" height="720px" class="d-block w-100" alt="..." /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/turbo1.JPG' %}" height="720px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/turbo2.JPG' %}" height="720px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/turbo3.jpg' %}" height="720px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/turbo4.JPG' %}" height="720px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/turbo5.JPG' %}" height="720px" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <section class="turbtext"> 
+            <br>            
+            El turbo está instalado en el sistema de escape del motor, entre el colector de escape y el tubo de escape. En la práctica, el turbo es un dispositivo altamente sofisticado, el cual es accionado por los gases de escape que salen del motor y hacen girar las turbinas que lleva incorporadas (de admisión y de escape).
+            <br>
+            Instalar un turbo permite que puedas forzar la admisión de ese aire en la cantidad y presión que desees... y que el motor sea capaz de soportar. Cuanto más denso el aire, más combustible puedes añadir, lo que a su vez se obtiene más potencia. 
+            <br>
+            <br>
+            <br>
+            
+        </section>
+              
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foot">
+                <h4>Telefono</h4>
+                <p>+56991706549</p>
+            </div>
+            <div class="content-foot">
+                <h4>E-mail</h4>
+                <p>123@kuchau.cl</p>
+            </div>
+            <div class="content-foot">
+                <h4>Direccion
+                </h4>
+                <p>Av. vicuña mackena 8631</p>
+            </div>
+            <h2 class="titu-final">&copy; Rayo Makween </h2>
+        </div>
+    </footer>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
